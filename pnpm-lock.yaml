@@ -1,0 +1,83 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+  .:
+    dependencies:
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
+    devDependencies:
+      '@testing-library/react':
+        specifier: 14.2.1
+        version: 14.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+
+packages:
+
+  '@testing-library/react@14.2.1':
+    resolution:
+      integrity: sha512-P9bPt9HkSMuBxYOGbxlALpxkMvAIJm4KXvVqm2P3YbqHKd+ib6U/oNYBrNbVFMXR4GGLwV2rKv6iJmKY6yA==
+
+  '@testing-library/dom@9.3.4':
+    resolution:
+      integrity: sha512-FlZPHmpjxxB2+E6yd6A4xJMEeamkWcMvCbKFAvnPlfMPPq2j+gHPZz7ujuXmvHuBMrQ2uLl9KZLB70v8R9pA==
+
+  js-tokens@4.0.0:
+    resolution:
+      integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/nQ==
+
+  loose-envify@1.4.0:
+    resolution:
+      integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f8zsQTRtPr/31ePYDg==
+    hasBin: true
+
+  react-dom@18.3.1:
+    resolution:
+      integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
+    peerDependencies:
+      react: ^18.3.1
+
+  react@18.3.1:
+    resolution:
+      integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+A==
+
+  scheduler@0.23.2:
+    resolution:
+      integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIhhWiWzvkczyBKpnF5LSFKF74it/g4O4NQS76VDFA9G3bw==
+
+snapshots:
+
+  '@testing-library/react@14.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@testing-library/dom': 9.3.4
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@testing-library/dom@9.3.4':
+    dependencies:
+      loose-envify: 1.4.0
+
+  js-tokens@4.0.0: {}
+
+  loose-envify@1.4.0:
+    dependencies:
+      js-tokens: 4.0.0
+
+  react-dom@18.3.1(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      scheduler: 0.23.2
+
+  react@18.3.1:
+    dependencies:
+      loose-envify: 1.4.0
+
+  scheduler@0.23.2:
+    dependencies:
+      loose-envify: 1.4.0
