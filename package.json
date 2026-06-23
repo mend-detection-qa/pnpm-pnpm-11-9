@@ -1,0 +1,16 @@
+{
+  "name": "pnpm-11-9-lockfile-checksum-peer-resolution",
+  "version": "1.0.0",
+  "description": "Mend-SCA probe for pnpm 11.9 — lockfile_format, checksum_signing, tree_structure",
+  "private": true,
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "14.2.1"
+  },
+  "engines": {
+    "pnpm": ">=11.9 <12"
+  }
+}
