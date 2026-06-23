@@ -1,0 +1,24 @@
+{
+  "$schema": "https://mend-detection-qa.github.io/schemas/expected-tree-v1.schema.json",
+  "schemaVersion": "1.0",
+  "probe": {
+    "pm": "pnpm",
+    "pmVersion": ">=11.9 <12",
+    "lockfileVersion": "9.0",
+    "categories": ["lockfile_format", "checksum_signing", "tree_structure"],
+    "notes": [
+      "lockfile_format: All packages carry integrity sha512 hashes (new in 11.9 for on-demand registries).",
+      "checksum_signing: .npmrc sets verify-store-integrity=true — exercises ERR_PNPM_MISSING_TARBALL_INTEGRITY enforcement.",
+      "tree_structure: Snapshot keys use deterministic peer-suffix form e.g. react-dom@18.3.1(react@18.3.1). PnpmParserV9Impl must strip parenthesised suffixes to recover bare version '18.3.1' — regression detector."
+    ]
+  },
+  "dependencies": [
+    {"name": "react", "version": "18.3.1", "type": "direct"},
+    {"name": "react-dom", "version": "18.3.1", "type": "direct"},
+    {"name": "@testing-library/react", "version": "14.2.1", "type": "dev"},
+    {"name": "@testing-library/dom", "version": "9.3.4", "type": "transitive"},
+    {"name": "loose-envify", "version": "1.4.0", "type": "transitive"},
+    {"name": "js-tokens", "version": "4.0.0", "type": "transitive"},
+    {"name": "scheduler", "version": "0.23.2", "type": "transitive"}
+  ]
+}
